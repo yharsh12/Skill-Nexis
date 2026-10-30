@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>Flexbox and Grid Layouts</title>
+    <style>
+      body{
+        font-family:sans-serif;
+        line-height:1.6;
+        margin:0;
+        padding:20px;
+        background:#f1f5f9;
+        color:#1e293b;
+      }
+      .wrapper{
+        max-width:900px;
+        margin:auto;
+      }
+      h2{
+        color:#0066cc;
+        border-bottom:2px solid #cbd5e1;
+        padding-bottom:6px;
+      }
+      .flex-row{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        background:#ffffff;
+        padding:15px;
+        border-radius:6px;
+        margin-bottom:30px;
+        box-shadow:0 1px 3px rgba(0,0,0,0.05);
+      }
+      .flex-box{
+        background:#0284c7;
+        color:#fff;
+        padding:10px 20px;
+        border-radius:4px;
+        font-weight:bold;
+      }
+      .grid-layout{
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+        gap:15px;
+      }
+      .grid-item{
+        background:#ffffff;
+        border:1px solid #cbd5e1;
+        border-radius:6px;
+        padding:25px;
+        text-align:center;
+        box-shadow:0 1px 3px rgba(0,0,0,0.05);
+      }
+      .grid-item.highlight{
+        background:#0066cc;
+        color:#ffffff;
+      }
+      @media (max-width:700px){
+        .grid-layout{
+          grid-template-columns:1fr;
+        }
+        .flex-row{
+          flex-direction:column;
+          gap:10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2>Flexbox Layout (1D Distribution)</h2>
+      <div class="flex-row">
+        <div class="flex-box">Flex Element 1</div>
+        <div class="flex-box">Flex Element 2</div>
+        <div class="flex-box">Flex Element 3</div>
+      </div>
+      <h2>CSS Grid Layout (2D Multi-Column Layout)</h2>
+      <div class="grid-layout">
+        <div class="grid-item highlight">Card 1 (Featured)</div>
+        <div class="grid-item">Card 2</div>
+        <div class="grid-item">Card 3</div>
+        <div class="grid-item">Card 4</div>
+        <div class="grid-item highlight">Card 5 (Featured)</div>
+        <div class="grid-item">Card 6</div>
+      </div>
+    </div>
+  </body>
+</html>

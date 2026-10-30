@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>Responsive Navbar</title>
+    <style>
+      body{
+        font-family:sans-serif;
+        line-height:1.6;
+        margin:0;
+        padding:20px;
+        color:#222;
+      }
+      header,section,footer{
+        max-width:800px;
+        margin:auto;
+        padding:20px 0;
+      }
+      h1,h2{
+        color:#0066cc;
+      }
+      .card{
+        background:#f4f4f4;
+        padding:15px;
+        border-radius:6px;
+        margin-bottom:12px;
+      }
+      .navbar{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        background-color:#0066cc;
+        padding:12px 20px;
+        border-radius:6px;
+      }
+      .logo{
+        color:#ffffff;
+        font-weight:bold;
+        font-size:1.1rem;
+      }
+      .nav-links{
+        list-style:none;
+        display:flex;
+        gap:15px;
+        margin:0;
+        padding:0;
+      }
+      .nav-links a{
+        color:#ffffff;
+        text-decoration:none;
+        font-weight:500;
+      }
+      .hero{
+        margin-top:20px;
+      }
+      @media (max-width:600px){
+        .navbar{
+          flex-direction:column;
+          gap:10px;
+        }
+        .nav-links{
+          flex-direction:column;
+          align-items:center;
+          gap:8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <h1>Test Name 1</h1>
+        <p>Aspiring Full Stack Web Developer</p>
+      </div>
+    </header>
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>I build web applications focusing on HTML5, CSS3, modern JavaScript, and React.</p>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="card">
+          <h3>E-Commerce UI</h3>
+          <p>A responsive shopping interface built with clean CSS.</p>
+        </div>
+        <div class="card">
+          <h3>Task Tracker</h3>
+          <p>A vanilla JavaScript state-driven application.</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2026 Test Name 1</p>
+    </footer>
+  </body>
+</html>

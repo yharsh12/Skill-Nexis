@@ -1,0 +1,42 @@
+[
+  {
+    "id":1,
+    "title":"Architecting Scalable React Component Hierarchies",
+    "category":"React",
+    "date":"Oct 24, 2026",
+    "author":"test name 1",
+    "summary":"Master compound components, props destructuring, and container-presentational patterns for production apps.",
+    "content":"Designing clean React architecture requires balancing reusability with developer velocity. Avoid premature abstraction and favor explicit prop interfaces over deeply nested render trees.",
+    "tags":["Architecture","Hooks","Patterns"]
+  },
+  {
+    "id":2,
+    "title":"CSS Grid Subgrid: The Layout Superpower You Overlooked",
+    "category":"CSS",
+    "date":"Oct 20, 2026",
+    "author":"test name 2",
+    "summary":"Align child elements across nested grids effortlessly without hacky height synchronizations.",
+    "content":"Subgrid allows a grid item to inherit the grid tracks of its parent. This fixes the age-old problem of misaligned card headers and footers across different screen dimensions.",
+    "tags":["Subgrid","Responsive","ModernCSS"]
+  },
+  {
+    "id":3,
+    "title":"Mastering JavaScript Memory Leaks & Event Loop",
+    "category":"JavaScript",
+    "date":"Oct 15, 2026",
+    "author":"test name 3",
+    "summary":"Dive into V8 garbage collection, closures, timers, and microtask queue mechanics.",
+    "content":"Dangling event listeners and uncleaned setInterval callbacks quietly consume client memory. Discover profiling workflows using Chrome DevTools memory allocation snapshots.",
+    "tags":["V8","Performance","CoreJS"]
+  },
+  {
+    "id":4,
+    "title":"HTML5 Semantic Accessibility: Beyond Div Soup",
+    "category":"HTML",
+    "date":"Oct 10, 2026",
+    "author":"test name 4",
+    "summary":"How landmark roles and native semantic tags transform screen reader experiences and SEO indexing.",
+    "content":"Using <main>, <article>, and <section> tags isn't just about clean syntax; it structures the browser's accessibility tree so screen readers can jump directly to landmark sections.",
+    "tags":["A11y","SemanticWeb","SEO"]
+  }
+]
