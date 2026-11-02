@@ -1,0 +1,32 @@
+.cardContainer {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 24px;
+    max-width: 380px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    font-family: sans-serif;
+  }
+  .cardTitle {
+    margin: 0 0 8px 0;
+    color: #0f172a;
+    font-size: 1.4rem;
+  }
+  .cardText {
+    color: #475569;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0 0 16px 0;
+  }
+  .cardButton {
+    background-color: #0284c7;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  .cardButton:hover {
+    background-color: #0369a1;
+  }
